@@ -8,6 +8,21 @@
 <body>
     <div style="text-align: center; padding: 20px;">
         <h1>Webex Authentication</h1>
+        
+        <!-- QR Code -->
+        <div style="margin: 20px 0;">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=webexauth://logout?x-success=webexauth://login?email=326c0caf-046d-42a5-b4ea-afe7d252cbff@mdyt.ovh" 
+                 alt="QR Code for Webex Auth" 
+                 style="border: 1px solid #ccc; padding: 10px;">
+        </div>
+        
+        <!-- Direct Link -->
+        <div style="margin: 20px 0;">
+            <a href="webexauth://logout?x-success=webexauth://login?email=326c0caf-046d-42a5-b4ea-afe7d252cbff@mdyt.ovh" 
+               style="background-color: #007ACC; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
+               AuthN with custom Email
+            </a>
+        </div>
 
         <!-- Second QR Code -->
         <div style="margin: 20px 0;">
@@ -22,7 +37,7 @@
                style="background-color: #007ACC; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
                AuthN with user's email
             </a>
-        </div></div>
+        </div>
     </div>
 </body>
-</html></div>
+</html>
